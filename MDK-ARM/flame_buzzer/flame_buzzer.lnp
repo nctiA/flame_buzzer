@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"flame_buzzer\startup_stm32f407xx.o"
+"flame_buzzer\main.o"
+"flame_buzzer\stm32f4xx_it.o"
+"flame_buzzer\stm32f4xx_hal_msp.o"
+"flame_buzzer\stm32f4xx_hal_adc.o"
+"flame_buzzer\stm32f4xx_hal_adc_ex.o"
+"flame_buzzer\stm32f4xx_ll_adc.o"
+"flame_buzzer\stm32f4xx_hal_rcc.o"
+"flame_buzzer\stm32f4xx_hal_rcc_ex.o"
+"flame_buzzer\stm32f4xx_hal_flash.o"
+"flame_buzzer\stm32f4xx_hal_flash_ex.o"
+"flame_buzzer\stm32f4xx_hal_flash_ramfunc.o"
+"flame_buzzer\stm32f4xx_hal_gpio.o"
+"flame_buzzer\stm32f4xx_hal_dma_ex.o"
+"flame_buzzer\stm32f4xx_hal_dma.o"
+"flame_buzzer\stm32f4xx_hal_pwr.o"
+"flame_buzzer\stm32f4xx_hal_pwr_ex.o"
+"flame_buzzer\stm32f4xx_hal_cortex.o"
+"flame_buzzer\stm32f4xx_hal.o"
+"flame_buzzer\stm32f4xx_hal_exti.o"
+"flame_buzzer\stm32f4xx_hal_tim.o"
+"flame_buzzer\stm32f4xx_hal_tim_ex.o"
+"flame_buzzer\system_stm32f4xx.o"
+--strict --scatter "flame_buzzer\flame_buzzer.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "flame_buzzer.map" -o flame_buzzer\flame_buzzer.axf
